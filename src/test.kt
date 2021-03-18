@@ -10,7 +10,5 @@ fun main(args : Array<String>) {
 
     tmp.sortWith(Comparator { o1, o2 -> (o2 + o1).compareTo(o1 + o2) })
 
-    val ans : String = tmp.stream().collect(Collectors.joining())
-
-    print(ans)
+    print(tmp.stream().collect(Collectors.joining()))
 }
